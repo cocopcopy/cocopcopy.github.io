@@ -1,0 +1,80 @@
+.row_head{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+    
+}
+
+
+#select{
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+.file_item{
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.file_item:hover{
+    cursor: pointer;
+}
+
+.active{
+    background: #03a9f4;
+    color: #fff;
+}
+
+.num_input{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    border:0; 
+    color:#f6931f; 
+    text-align: center;
+}
+
+#anitime{
+    margin-bottom: 10px;
+}
+
+.buttom{
+    width: 100%;
+    height: 30px;
+    background: #03a9f4;
+    /* border: 1px solid black; */
+    color: #fff;
+    border-radius: 3px; /*外观设置为圆形*/
+    border: 0.5px solid rgb(52, 129, 230);
+    display:flex;
+    justify-content:center;  
+    align-items:center;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.buttom:hover{
+    cursor: pointer;
+    background: #55b7e4;
+}
+#amount{
+    border:0; 
+    color:#f6931f; 
+    font-weight:bold;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#slider{
+    width: 250%;
+    transform-origin: 7% 600%;
+    transform: rotate(90deg); 
+}

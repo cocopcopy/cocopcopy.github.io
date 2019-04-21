@@ -1,0 +1,3 @@
+文件夹iteration里的数据解码后的Modulariy(Q)和NMI用于迭代图，与DYNMOGA进行比较，看收敛性；
+文件coded_modularity 和 NMI用于散点图，看每次迭代候选解目标函数的具体变化和分布；
+文件t_NMI记录10个片段最后的NMI，同样与DYNMOGA进行比较

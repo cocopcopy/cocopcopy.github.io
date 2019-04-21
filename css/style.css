@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+#graph_body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#timer_shaft{
+    height: 100%;
+    width: 10%;
+    border: 1px solid black;
+}
+
+#right_body{
+    height: 100%;
+    width: 90%;
+    border: 1px solid black;
+    /* position: relative; */
+    /* display:flex;
+    flex-direction: column; */
+    overflow: scroll;
+}
+
+#right_item1{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+#right_item2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* width: 300px; */
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+} 
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    background: #03a9f4;
+    border-radius: 10px; /*将轨道设为圆角的*/
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    margin-top: -4px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em #888; /*设置边框*/
+}
+
+.title{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+    color:#03a9f4;
+    /* border-bottom: 1px solid black; */
+}
+
+#box{
+    width:100px;
+    height:100px;
+    background-color: #555;
+    color: #fff;
+    /* Rotate div */
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* Internet Explorer */
+    -moz-transform:rotate(45deg); /* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); /* Opera */
+  
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    z-index: 1;
+}
+  
+#box:hover{
+    cursor: pointer;
+}
+
+ #chosetext{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#chosetext>a{
+    text-decoration: none; 
+    color: #fff;
+}

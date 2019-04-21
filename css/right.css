@@ -1,0 +1,46 @@
+.right_head{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.graph_title{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+    color:#03a9f4;
+}
+
+#iter_slider{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+#iter_time{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+}
+
+#iterslider{
+    width: 80%;
+}
+
+.graph_container{
+    width: 100%;
+    height: 32%;
+    /* border: 1px solid #888;  */
+    display: flex;
+}
+
+.graph_item{
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #888;
+}

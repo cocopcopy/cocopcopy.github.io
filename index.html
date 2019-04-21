@@ -1,1 +1,104 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/left.css">
+    <link rel="stylesheet" href="./css/right.css">
+    <link rel="stylesheet" href="./css/scatter.css">
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/echarts.js"></script>
+    <script src="./js/echarts-gl.js"></script>
+    <script src="./js/d3.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <div id="chosetext"><a href="#right_item2">overview</a></div>
+    </div>
+    <div id="graph_body">
+        <div id="timer_shaft">
+            <div class="title">Control</div>
+            <!-- <div class="row_head">iter</div> -->
+            <div class='row_head'>
+                Dataset
+            </div>
+            <div id="select">
+                <div class="file_item active">expand</div>
+                <div class="file_item">merge</div>
+            </div>
+            <div class='row_head'>
+                Animation(ms/f)
+            </div>
+            <input type="text" value=500 class="num_input" id='anitime'>
+
+            <div id="start_buttom" class="buttom">start</div>
+            <div id="pause_buttom" class="buttom">pause</div>
+            <div id="done_buttom" class="buttom">done</div>
+            <div class='row_head'>Timestep t</div>
+            <input type="text" value=1 id="amount">
+            <input type="range" id="slider" min=1 max=10 value=1>
+
+
+        </div>
+
+        <div id="right_body">
+            <div class="right_item" id="right_item1">
+                <div class="right_head">
+                    <div class="graph_title">Ground Truth</div>
+                    <div class="graph_title"> DEC</div>
+                    <div class="graph_title"> DYNMOGA</div>
+                </div>
+                <div class="graph_container">
+                    <div class="graph_item" id="truth0"></div>
+                    <div class="graph_item" id="ecd0"></div>
+                    <div class="graph_item" id="base0"></div>
+                </div>
+                <div id="iter_slider">
+                    <div id="iter_time">
+                        iter: <span>0</span>
+                    </div>
+                    <input type="range" id="iterslider" min=0 max=100 value=0>
+                </div>
+                <div class="graph_container">
+                    <div class="graph_item" id="truth1"></div>
+                    <div class="graph_item" id="ecd1"></div>
+                    <div class="graph_item" id="base1"></div>
+                </div>
+                <div class="right_head">
+                    <div class="graph_title">Maximum NMI based on detected community structures at timesteps t and t-1</div>
+                    <div class="graph_title">Maximum modularity at timestep t</div>
+                    <div class="graph_title">NMI based on detected and real community structures </div>
+                </div>
+                <div class="graph_container">
+                    <div class="graph_item" id="NMI_iter"></div>
+                    <div class="graph_item" id="Q_iter"></div>
+                    <div class="graph_item" id="NMI_step"></div>
+                </div>
+            </div>
+            <div class="right_item" id="right_item2">
+                <div id="scatter_container">
+                    <div class="right_head">
+                        <div class="scatter_title">Candidate solutions' NMI</div>
+                        <div class="scatter_title">Candidate solutions' modularity calculated on a genome representation</div>
+                    </div>
+                    <div class="scatter_body">
+                        <div class="scatter_item" id="scatter0"></div>
+                        <div class="scatter_item" id="scatter1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/graph.js"></script>
+    <script src="./js/scatter.js"></script>
+</body>
+
+</html>

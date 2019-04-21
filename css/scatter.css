@@ -1,0 +1,27 @@
+#scatter_container{
+    width: 100%;
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    /* border-bottom: 1px solid black; */
+}
+
+.scatter_title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+    color:#03a9f4;
+}
+.scatter_body{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.scatter_item{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #888;
+}
