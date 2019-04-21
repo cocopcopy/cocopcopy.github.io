@@ -116,8 +116,7 @@ function graphDraw(chart, data, link, coordi, i) {
                 }),
                 links: link,
                 categories: data.map(i => i.category),
-                roam: true,
-                focusNodeAdjacency: true
+                roam: true
             }
         ]
     });
